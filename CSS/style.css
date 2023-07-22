@@ -38,11 +38,12 @@ main{
     cursor: pointer;
     padding: 5px;
     align-self: flex-end;
+    font-size: 36px;
 }
 
 .options select{
-    width: 85%;
-    padding: 3px;
+    width: 85px;
+    padding: 2%;
 }
 
 .input input{
@@ -58,8 +59,30 @@ main{
     border: none;
     appearance: textfield;
     all: unset;
+    padding: 5px;
 }
 
 .rate1{
     margin-top: -1.5rem;
+}
+
+.rate2{
+    margin-top: 0.5rem;
+    font-weight:700;
+}
+
+.target{
+    transform: translateX(-4%);
+}
+
+.result{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    background-color: #1a0829;
+    color: #fff;
+    font-weight: 700;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
