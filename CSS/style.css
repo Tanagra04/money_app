@@ -52,10 +52,10 @@ main{
     height: 35px;
     box-sizing: border-box;
     border-radius: 2px;
-    background-color: #000;
-    color: #fff;
+    background-color: #000 !important;
+    color: #fff !important;
     font-size: 1.2rem;
-    margin-top: 1rem;
+    /*margin-top: 1rem;*/
     border: none;
     appearance: textfield;
     all: unset;
@@ -85,4 +85,5 @@ main{
     outline: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 5px;
 }
