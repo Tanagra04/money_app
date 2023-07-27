@@ -1,7 +1,7 @@
 // declarar variables para la captura de datos
 let rate1 = document.querySelector('.rate1');
 let rate2 = document.querySelector('.rate2');
-let resulBtn = document.querySelector('.result');
+let resultBtn = document.querySelector('.result');
 let selects = document.querySelectorAll('.options select');
 let sel1 = selects[0];
 let sel2 = selects[1];
@@ -12,12 +12,18 @@ let inpt2 = inputs[1];
 let rates = {};
 let = resquestUrl = "https://api.exchangerate.host/latest?base=USD"
 
+//utilizar la funcion de tomar las monedas de la api
+fetchRates();
+
 //crear la funcion async para tomar las mondas de la api
 async function fetchRates(){
     //declarar una variable local
     let res = await fetch (resquestUrl);
     res = await res.json();
     rates = res.rates;
+
+    //utilizar la funcion de las options de modena
+    populteOptions();
 }
 
 //declarar la funcion para las opciones
